@@ -12,6 +12,10 @@ h1 {
   padding: 20px;
 }
 
+h2 {
+  color:#ffffff
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -68,7 +72,9 @@ li a:hover {
 
 
 
-
+p {
+  color: #ffffff
+}
 
 body, html {
   margin: 0;
@@ -90,3 +96,15 @@ align-items: center;}
 #story {min-height: 70vh;
 min-width: 100vh}
 #title {min-width: 100vh}
+
+
+
+#buttons {display:flex;
+flex-direction: column;
+max-width: 20vw}
+
+#stories {display:flex;}
+
+#title-text{
+  color: black
+}

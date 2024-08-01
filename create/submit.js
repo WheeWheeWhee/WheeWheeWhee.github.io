@@ -7,6 +7,23 @@ submit.addEventListener("click", submitStory);
 
 
 function submitStory () {
-    console.log(title.value)
-    console.log(story.value)
+    let output = {title: title.value,
+    story: story.value,
 }
+let existingStories = localStorage.getItem("stories");
+
+if (existingStories === null) {
+    existingStories = []
+} else {
+    existingStories = JSON.parse(existingStories);
+    if (existingStories.length >= 3) {
+        alert("Max stories reached! Delete on the Your Stories page.");
+        return;
+    }
+
+    }
+    existingStories.push(output)
+
+    localStorage.setItem("stories", JSON.stringify(existingStories))
+}
+
