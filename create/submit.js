@@ -24,6 +24,8 @@ if (existingStories === null) {
     }
     existingStories.push(output)
 
-    localStorage.setItem("stories", JSON.stringify(existingStories))
+    localStorage.setItem("stories", JSON.stringify(existingStories));
+    alert("Story Submitted! You can read it on the Your Stories Page.")
+    window.location.reload(true)
 }
 

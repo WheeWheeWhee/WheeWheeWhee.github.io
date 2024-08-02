@@ -5,19 +5,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+
+    
   </head>
+  
   <body>
+    <ul><li><a href="../">Home</a></li>
+      <li><a href="../stories/">Your Stories</a></li>
+      <li><a href="../create/">Create</a></li> 
+
+      <li><a href="../faq.asp">FAQ</a></li> </ul>
+    <div id="particles-js"></div>
+
     <div id="stories">
       <div id="buttons">
         <button id="story1">Story 1</button>
-        <button id="story1">Story 2</button>
-        <button id="story1">Story 3</button>
+        <button id="story2">Story 2</button>
+        <button id="story3">Story 3</button>
       </div>
       <div id="content">
         <div id="title">
             <h2 id="title-text">
                 This is the title
             </h2>
+            <button id="delete">Delete Story</button>
         </div>
         <p id="story-text">
 
@@ -25,5 +37,10 @@
       </div>
     </div>
     <script src="stories.js" defer></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" defer></script>
+    <script src="../background.js" defer></script>
   </body>
 </html>
+
